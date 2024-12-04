@@ -1,0 +1,35 @@
+<!--  用html写一个登陆界面，
+    对登陆界面进行美化
+    使用类选择器，id选择器和标签选择器 -->
+<!-- css定义商品主页，参照商品主页
+    技术：1.布局，层叠样式表
+    2.行内，多种选择器 -->
+<!-- 对登陆界面用户名和密码进行匹配，大小写，数字，字母混合，长度 
+ 采用失去焦点或响应回车 -->
+<!-- 对html元素的操作，窗口等元素 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login_box">
+        <div class="wel">欢迎!</div>
+        <form class="form" action="/submit-login" method="post">
+            <input type="text" id="username" name="username" placeholder="请输入用户名" ><br>
+            <input type="password" id="password" name="password" placeholder="请输入密码" required><br>
+            <div class="error_text"></div>
+            <button id="submit" type="submit">登录</button>
+        </form>
+        <div class="other">
+            <a href="">注册</a>
+            <a href="">忘记密码</a>
+        </div>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>
